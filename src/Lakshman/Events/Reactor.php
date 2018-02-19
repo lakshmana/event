@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: procab
- * Date: 2/18/18
- * Time: 9:24 PM
- */
 
 namespace Lakshman\Events;
 
