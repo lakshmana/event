@@ -45,6 +45,8 @@ $test->addEventListener('update', function($args){
     var_dump($args);
 });
 
+//$test->removeEventListener('update');
+
 /**
  * assign callback for the stop event
  */

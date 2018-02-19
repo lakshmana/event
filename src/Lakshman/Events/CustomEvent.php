@@ -23,14 +23,3 @@ class CustomEvent{
         }
     }
 }
-
-/*
- * $event = new CustomEvent;
- * $event->registerCallback(function(){});
- * $event->dispatch('dd');
- *
- * $reactor->registerEvent('click');
- *
- * $reactor->addEventListener('click', function(){})
- * $reactpr->dispatchEvent('click');
- */

@@ -18,8 +18,16 @@ trait Reactor{
         $this->events[$eventName]->registerCallback($callback);
     }
 
+    public function removeEventListener($eventName)
+    {
+        if(!array_key_exists($eventName, $this->events)) throw new \InvalidArgumentException("{$eventName} not set");
+
+        unset($this->events[$eventName]);
+    }
+
     public function dispatchEvent($eventName, $args = null)
     {
+        if(!array_key_exists($eventName, $this->events)) return;
         $this->events[$eventName]->dispatch($args);
     }
 }
