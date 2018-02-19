@@ -3,6 +3,7 @@ The CustomEvent interface represents events initialized by an application for an
 
 The Reactor trait allows class instance to add and dispatch events as in javascript. The usage is simple with the following self explanatory example.
 
+```
 <?php
 
 use Lakshman\Events\Reactor;
@@ -75,3 +76,4 @@ $test->addEventListener('stop', function(){
 $test->doSomeTask();
 $test->doSomeTask();
 $test->stop();
+```
